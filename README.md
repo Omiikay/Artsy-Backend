@@ -74,34 +74,31 @@ graph TD
 ## Project Structure
 
 ```
-application/
+backend/
 │
-├── backend/
-│   │
-│   ├── controllers/
-│   │   ├── artsyController.js             # Artsy API controller
-│   │   ├── authController.js              # Authentication controller
-│   │   └── favoriteController.js          # Favorites controller
-│   │
-│   ├── middleware/
-│   │   ├── auth.js                        # Authentication middleware
-│   │
-│   ├── models/
-│   │   ├── User.js                        # User model
-│   │   └── Favorite.js                    # Favorite model
-│   │
-│   ├── routes/
-│   │   ├── api/
-│   │   │   ├── artsy.js                   # Artsy API routes
-│   │   │   ├── auth.js                    # Authentication routes
-│   │   │   └── favorites.js               # Favorites routes
-│   │
-│   ├── utils/
-│   │   ├── artsy.js                       # Artsy API utilities
-│   │   └── gravatarUrl.js                 # Gravatar URL generator
-│   │
-│   ├── .env                               # Environment variables
-│   ├── package.json                       # NPM package configuration
+├── controllers/
+│   ├── artsyController.js             # Artsy API controller
+│   ├── authController.js              # Authentication controller
+│   └── favoriteController.js          # Favorites controller
+│
+├── middleware/
+│   ├── auth.js                        # Authentication middleware
+│
+├── models/
+│   ├── User.js                        # User model
+│   └── Favorite.js                    # Favorite model
+│
+├── routes/
+│   ├── artsy.js                   # Artsy API routes
+│   ├── auth.js                    # Authentication routes
+│   └── favorites.js               # Favorites routes
+│
+├── utils/
+│   ├── artsy.js                       # Artsy API utilities
+│   └── gravatarUrl.js                 # Gravatar URL generator
+│
+├── .env                               # Environment variables
+├── package.json                       # NPM package configuration
 │   ├── server.js                          # Server entry point
 │   └── app.yaml                           # Google Cloud deployment config
 │
