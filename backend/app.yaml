@@ -1,0 +1,35 @@
+runtime: nodejs22
+
+env_variables:
+  NODE_ENV: production
+  PORT: 8080
+  MONGODB_URI: mongodb+srv://omiikay:3900965@cluster0.xwiiexj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+  JWT_SECRET: 8a43129da9dd0e91e59ce713834d894aa1093cd8399bc21f8dc384650c8bbff7
+  ARTSY_CLIENT_ID: 5cf89f108a5e1eb46960
+  ARTSY_CLIENT_SECRET: b6a7caf905e35e6a810feca5f85c7cc8
+  ARTSY_API_BASE: https://api.artsy.net/api
+  ARTSY_WEB_URL: https://www.artsy.net
+
+handlers:
+  # API endpoints
+  - url: /api/.*
+    script: auto
+    secure: always
+
+  # Static files
+  - url: /(.*\.(js|gif|css|png|jpg|jpeg|svg|ico|json))$
+    static_files: public/browser/\1
+    upload: public/browser/.*\.(js|css|png|jpg|jpeg|svg|ico|json)$
+    secure: always
+
+  # 处理 media/ 子目录中的资源（如字体）
+  - url: /media/(.*)
+    static_files: public/browser/media/\1
+    upload: public/browser/media/.*
+
+  
+  # Redirect all other requests to index.html
+  - url: /.*
+    static_files: public/browser/index.html
+    upload: public/browser/index.html
+    secure: always
