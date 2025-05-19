@@ -6,6 +6,8 @@ This portal can be reached on: https://csci571-hw5-nrocikay.wl.r.appspot.com/
 
 Details about the front end can be found in this [repo](https://github.com/Omiikay/Artsy-Frontend).
 
+Details about the Android end can be found in this [repo](https://github.com/Omiikay/Artsy-Android).
+
 ## Project Overview
 
 This Artsy Portal allows users to search for artists using the Artsy API. Users can view artist details, artworks, and artwork categories. Authenticated users can save artists to favorites and view similar artists.
