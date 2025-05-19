@@ -4,7 +4,7 @@ A responsive web application for searching and exploring artists, built with Ang
 
 This portal can be reached on: https://csci571-hw5-nrocikay.wl.r.appspot.com/
 
-Details about the front end can be found in this [repo]().
+Details about the front end can be found in this [repo](https://github.com/Omiikay/Artsy-Frontend).
 
 ## Project Overview
 
